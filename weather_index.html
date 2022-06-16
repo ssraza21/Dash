@@ -2,16 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>
-      CodePen - Simple Weather App By Using OpenWeatherMap API &amp; Custom
-      Icons
-    </title>
+    <title>Home Dashboard</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap"
     />
     <link rel="stylesheet" href="./weather_style.css" />
   </head>
+
+  <!-- Body contains form asking for input and all of the cities that are added -->
   <body>
     <!-- partial:index.partial.html -->
 
@@ -19,17 +18,21 @@
       <div class="container">
         <h1 id="clock" class="heading"></h1>
         <form>
-          <input type="text" placeholder="Search for a city" autofocus />
+          <input type="text" placeholder="Search for a CITY" autofocus />
           <button type="submit">SUBMIT</button>
           <span class="msg"></span>
         </form>
       </div>
     </section>
+
+    <!-- This will hold all of the cities that the user inputs and requests -->
     <section class="ajax-section">
       <div class="container">
-        <ul class="cities"></ul>
+        <ul id="ajax_cities" class="cities"></ul>
       </div>
     </section>
+
+    <!-- The footer, contains the progammer who wrote this code -->
     <footer class="page-footer">
       <div class="container">
         <small
@@ -40,7 +43,8 @@
         </small>
       </div>
     </footer>
-    <!-- partial -->
+
+    <!-- Mention the two scripts that are being used -->
     <script src="script.js"></script>
     <script src="./weather_script.js"></script>
   </body>
