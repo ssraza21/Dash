@@ -70,9 +70,10 @@ body {
 
 .heading {
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 6rem;
+  text-align: center;
   letter-spacing: 0.02em;
-  padding: 0 0 30px 0;
+  padding: 0 0 0px 0;
 }
 
 .top-banner form {
@@ -123,16 +124,39 @@ body {
   min-height: 40px;
 }
 
+.top-banner .time {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text_dark);
+  padding: 20px 10%;
+  border-radius: 20px;
+  background: var(--text_light);
+  color: var(--text_med);
+}
+.top-banner .time::after {
+  content: "";
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  bottom: 430px;
+  left: 10%;
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 20px;
+  background: var(--text_light);
+}
+
 /* SECTION #2 This contains 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .ajax-section {
-  margin: 70px 0 20px;
+  margin: 40px 0 20px;
 }
 
 .ajax-section .cities {
   display: grid;
   grid-gap: 32px 20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .ajax-section .city {
@@ -182,8 +206,8 @@ body {
 
 .ajax-section .city-icon {
   margin-top: 10px;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 }
 
 /* FOOTER
