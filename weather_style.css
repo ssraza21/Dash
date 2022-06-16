@@ -134,7 +134,7 @@ body {
   background: var(--text_light);
   color: var(--text_med);
 }
-.top-banner .time::after {
+/* .top-banner .time::after {
   content: "";
   width: 80%;
   height: 50px;
@@ -145,7 +145,7 @@ body {
   opacity: 0.3;
   border-radius: 20px;
   background: var(--text_light);
-}
+} */
 
 /* SECTION #2 This contains 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -200,6 +200,7 @@ body {
 .ajax-section .city-name sup {
   padding: 0.2em 0.6em;
   border-radius: 30px;
+
   color: var(--text_light);
   background: var(--orange);
 }
