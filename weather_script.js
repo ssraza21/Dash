@@ -37,6 +37,7 @@ function gh() {
           <h2 class="city-name" data-name="${name},${sys.country}">
             <span>${name}</span>
             <sup>${sys.country}</sup>
+            
           </h2>
           <div class="city-temp">${Math.round(main.temp)}<sup>°F</sup>
           </div>
@@ -44,7 +45,7 @@ function gh() {
             <img class="city-icon" src="${icon}" alt="${
         weather[0]["description"]
       }">
-            <figcaption>${weather[0]["description"]}</figcaption>
+            <figcaption>${weather[0]["description"]}</figcaption> 
           </figure>
         `;
       li.innerHTML = markup;
@@ -55,10 +56,6 @@ function gh() {
     .catch(() => {
       msg.textContent = "Please search for a valid city 😩";
     });
-
-  msg.textContent = "";
-  form.reset();
-  input.focus();
 }
 gh();
 setInterval(gh, 1800000);
