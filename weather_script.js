@@ -58,4 +58,4 @@ function gh() {
     });
 }
 gh();
-setInterval(gh, 6000);
+setInterval(gh, 1800000);
