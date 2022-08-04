@@ -1,10 +1,10 @@
 /* RESET STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
-  --bg_main: #0a1f44;
-  --text_light: #fff;
+  --bg_main: #041c32;
+  --text_light: #6394aa;
   --text_med: #53627c;
-  --text_dark: #1e2432;
+  --text_dark: #04293a;
   --red: #ff1e42;
   --darkred: #c3112d;
   --orange: #ff8c00;
@@ -65,7 +65,7 @@ body {
 /* SECTION #1
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .top-banner {
-  color: var(--text_light);
+  color: #c3112d;
 }
 
 .heading {
@@ -128,11 +128,10 @@ body {
   font-size: 5rem;
   font-weight: bold;
   text-align: center;
-  color: var(--text_dark);
+  color: var(--text_light);
   padding: 20px 10%;
   border-radius: 20px;
-  background: var(--text_light);
-  color: var(--text_med);
+  background: var(--text_dark);
 }
 /* .top-banner .time::after {
   content: "";
@@ -163,8 +162,8 @@ body {
   position: relative;
   padding: 40px 10%;
   border-radius: 20px;
-  background: var(--text_light);
-  color: var(--text_med);
+  background: var(--text_dark);
+  color: var(--text_light);
 }
 
 .ajax-section .city::after {
@@ -190,7 +189,7 @@ body {
   font-size: 5rem;
   font-weight: bold;
   margin-top: 10px;
-  color: var(--text_dark);
+  color: var(--text_light);
 }
 
 .ajax-section .city sup {
