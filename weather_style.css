@@ -1,13 +1,13 @@
 /* RESET STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
-  --bg_main: #041c32;
-  --text_light: #6394aa;
+  --bg_main: #181818;
+  --text_light: #dddddd;
   --text_med: #53627c;
-  --text_dark: #04293a;
+  --text_dark: #444444;
   --red: #ff1e42;
   --darkred: #c3112d;
-  --orange: #ff8c00;
+  --orange: #53627c;
 }
 
 * {
