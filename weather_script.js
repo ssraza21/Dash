@@ -32,7 +32,11 @@ function gh() {
       const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`;
       console.log(weather);
       const li = document.createElement("li");
+      const li2 = document.createElement("li");
+      const li3 = document.createElement("li");
       li.classList.add("city");
+      li2.classList.add("city");
+      li3.classList.add("city");
       const markup = `
           <h2 class="city-name" data-name="${name},${sys.country}">
             <span>${name}</span>
@@ -49,8 +53,12 @@ function gh() {
           </figure>
         `;
       li.innerHTML = markup;
+      //li2.innerHTML = markup;
       //list = [];
       list.appendChild(li);
+      list.appendChild(li2);
+      list.appendChild(li3);
+
       console.log(list);
     })
     .catch(() => {
