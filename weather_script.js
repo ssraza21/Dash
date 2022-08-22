@@ -31,6 +31,8 @@ function gh() {
       const { main, name, sys, weather } = data;
       const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`;
       console.log(weather);
+      let date_sunset = new Date(sys.sunset * 1000);
+      let time_sunset = date_sunset.toLocaleTimeString();
       const li = document.createElement("li");
       const li2 = document.createElement("li");
       const li3 = document.createElement("li");
@@ -40,8 +42,6 @@ function gh() {
       const markup = `
           <h2 class="city-name" data-name="${name},${sys.country}">
             <span>${name}</span>
-            <sup>${sys.country}</sup>
-            
           </h2>
           <div class="city-temp">${Math.round(main.temp)}<sup>°F</sup>
           </div>
@@ -52,13 +52,20 @@ function gh() {
             <figcaption>${weather[0]["description"]}</figcaption> 
           </figure>
         `;
+      const markup_2 = `
+      <h2 class="city-name" data-name="${name},${sys.country}">
+      <span>Sunset Timing</span>      
+    </h2>
+    <div class="city-sunset">${time_sunset}
+          </div>
+    `;
       li.innerHTML = markup;
-      //li2.innerHTML = markup;
+      li2.innerHTML = markup_2;
       //list = [];
       list.appendChild(li);
       list.appendChild(li2);
       list.appendChild(li3);
-
+      console.log(sys.sunset);
       console.log(list);
     })
     .catch(() => {

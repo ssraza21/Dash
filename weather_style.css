@@ -191,6 +191,12 @@ body {
   margin-top: 10px;
   color: var(--text_light);
 }
+.ajax-section .city-sunset {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: var(--text_light);
+}
 
 .ajax-section .city sup {
   font-size: 0.5em;
