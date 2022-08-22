@@ -52,7 +52,7 @@ function gh() {
             <figcaption>${weather[0]["description"]}</figcaption> 
           </figure>
         `;
-      const markup_2 = `
+      const markup_3 = `
       <h2 class="city-name" data-name="${name},${sys.country}">
       <span>Sunset Timing</span>      
     </h2>
